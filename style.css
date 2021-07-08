@@ -56,7 +56,7 @@ ul{
 .product-cart ul li{
         display: inline-block;
         margin-right:5px;
-       
+      
 }
 
 .product-cart ul li a{
@@ -107,13 +107,16 @@ ul{
        
 }
 
-.menu-search-elements ul.menu li{
+.menu-search-elements ul.menu > li{
         display: inline-block;
+        position:relative;
+        transition: 0.3s;
+        
 }
 .menu-search-elements ul.menu li a i.menu-dropdown-icon{
         margin-left:4px;
 }
-.menu-search-elements ul.menu li a{
+.menu-search-elements ul.menu li  a{
         text-decoration: none;
         color:#000;       
         padding: 10px 15px;
@@ -163,10 +166,57 @@ ul{
         right:50px;
         color: #000;
         padding:12px 25px;
-        border: 1px solid #000;
+        border: 1px solid #ccc;
         transition: 0.3s;
 }
 .home-banner-elements a:hover{
-        background: #000;
+        background: #00c8c8;
         color: #fff
+}
+
+/* Mega menu Desgin */
+ul.menu li >.mega-menu{
+        width: 350px;
+        background:#fff;
+        box-shadow: 1px 1px 9px #000;
+        padding:25px; 
+        position:absolute;
+        top:50px;
+        display:none;
+        z-index: 9999;
+}
+ul.menu .mega-menu .menu-categories{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+.menu-categories h4{
+        margin-bottom:15px;
+}
+
+.menu-categories ul.mega-menu-ul li{
+        margin-bottom:4px;
+}
+
+.menu-categories ul.mega-menu-ul li a{
+        font-weight: normal;
+        color:#727272;
+
+}
+
+.mega-menu .menu-ad{
+        margin-top:50px;
+        background: #333333;
+        text-align: center;
+        color:#fff;
+        padding:25px 0;
+}
+
+/* showing mega menu */
+ul.menu li:hover .mega-menu{
+        display: block;
+        top:30px;
+}
+ul.menu li:hover > a{
+        color: #00c8c8;
 }
