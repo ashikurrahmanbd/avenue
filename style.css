@@ -131,7 +131,7 @@ ul{
         padding:2px;
         border: 1px solid #ccc;
         border-radius: 3px;
-        margin-left:25px;
+        margin-left:35px;
 }
 
 .searchbar input:focus{
@@ -176,13 +176,14 @@ ul{
 
 /* Mega menu Desgin */
 ul.menu li >.mega-menu{
-        width: 350px;
+        width: 300px;
         background:#fff;
         box-shadow: 1px 1px 9px #000;
         padding:25px; 
         position:absolute;
         top:50px;
         display:none;
+        transition: 0.3s;
         z-index: 9999;
 }
 ul.menu .mega-menu .menu-categories{
@@ -216,7 +217,104 @@ ul.menu .mega-menu .menu-categories{
 ul.menu li:hover .mega-menu{
         display: block;
         top:30px;
+       
 }
 ul.menu li:hover > a{
         color: #00c8c8;
+}
+
+
+/* product by categories section css */
+.product-by-categories{
+        padding: 50px 0;
+
+}
+
+.products-elements{
+        padding: 25px 0;
+        border-top:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+}
+
+/* cutomize tab based on my need */
+
+.ui-tabs .ui-tabs-panel{
+        padding:25px 0;
+}
+
+.ui-widget.ui-widget-content{
+        border:none;
+}
+.ui-widget-header{
+        background: #fff;
+        border: none;
+}
+
+li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab{
+        border:none;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor{
+        background: #fff !important;
+        color:#8e8e8e;
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: uppercase;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-active.ui-state-active .ui-tabs-anchor{
+        color:#00c8c8;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+        background: #fff;
+}
+
+/* end of customization of tabs */
+
+/* css for tab products */
+.full-tab-content{
+        display: flex;
+        align-items: center;
+       
+}
+
+.full-tab-content .column-half img{
+        width:100%;
+        max-width:570px;
+        height:auto;
+}
+
+
+.full-tab-content .column-half.left{
+        margin-right:2%;
+        width:50%;
+}
+.full-tab-content .column-half.right{
+        width: 50%;
+        
+ }
+.column-half.left .two-products{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+}
+
+.column-half.left .two-products img{
+        width:100%;
+        max-width:260px;
+        margin-right:3%
+}
+
+column-half.left .two-products img:last-child{
+        margin-right:0;
+}
+.column-half.right .two-products img{
+        max-width:260px;
+        margin-right:3%
+}
+
+.column-half.right .two-products{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top:18px;
 }
