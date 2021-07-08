@@ -1,0 +1,16 @@
+/* reset code */
+body{
+        margin:0;
+        padding:0;
+}
+*{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+}
+.content-area{
+        width:90%;
+        max-width: 1170px;
+        margin:0 auto;
+}
+
