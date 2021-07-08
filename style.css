@@ -22,6 +22,10 @@ ul{
         width:90%;
         margin: 0 auto;
 }
+p, a{
+        font-size: 14px;;
+}
+
 /* Header CSS */
 .header{}
 .header-top{
@@ -278,7 +282,7 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab{
 
 .full-tab-content .column-half img{
         width:100%;
-        max-width:570px;
+        max-width:555px;
         height:auto;
 }
 
@@ -379,4 +383,104 @@ column-half.left .two-products img:last-child{
 .column-1-3 .right-info a.common-button:hover{
         color:#fff;
         background: #00c8c8;
+}
+
+/* Foote css */
+footer{
+        padding-top: 50px;
+        background: #f8f8f8;
+}
+.footer-content-area{
+        width:70%;
+        margin: 0 auto;
+}
+.footer-widgets{
+        display: flex;
+        
+}
+.single-widget{
+        width:20%;
+        margin-right: 0.5%;
+}
+.single-widget.last-child{
+        margin-right:0;
+}
+.single-widget h3{
+        margin-bottom: 15px;
+        color: #777274;
+        font-size: 14px;
+        text-transform: uppercase;
+}
+
+.single-widget p{
+        color: #777274;
+}
+.single-widget ul.useful-links li a{
+        text-decoration: none;
+        color: #777274;
+}
+.single-widget ul.useful-links li a:hover{
+        color:#00c8c8;
+}
+/* css for footer social */
+.footer-social{
+        padding-top: 25px;
+        display: flex;
+}
+.footer-social .left-text{
+        padding: 50px;
+        background: #333333;
+        text-align: center;
+        color:#fff;
+        width:49%;
+        margin-right:2%;
+}
+.footer-social .left-text h2.big{
+        font-size: 30px;
+        font-weight: bold;
+}
+
+.footer-social .social-icons{
+        width: 49%;
+        background: #00c8c8;
+}
+.social-icons ul{
+        
+        text-align: center;
+        top: 50%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+}
+.social-icons ul li{
+        margin-right: 15px;
+        display: inline-block;
+}
+.social-icons ul li a{
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: 18px;
+        color:#fff;
+}
+
+/* footer copy right css */
+.footer-copyright{
+        background: #000;
+        margin-top:50px;
+        color: #f8f8f8;
+        font-size: 13px;;
+}
+
+.copy-right-elements{
+        display: flex;
+        padding:15px 0;
+        text-align: center;
+}
+.copyright-left{
+        width: 50%;
+}
+.copyright-right{
+        width: 50%;
+
 }
